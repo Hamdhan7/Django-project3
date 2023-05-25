@@ -1,0 +1,48 @@
+.navbar {
+    transition: background-color 0.3s ease;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0);
+    border-radius: 0px  0px 18px 18px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+    color: #000000; /* Set the color for light mode */
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 0; /* Remove bottom margin */
+    font-size: 14px; /* Adjust font size as needed */
+    line-height: 1.5; /* Adjust line height as needed */
+
+}
+.navbar-dark{
+    /* From https://css.glass */
+background: rgba(0, 0, 0, 0);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+        margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #ffffff; /* Set the color for dark mode */
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 0; /* Remove bottom margin */
+    font-size: 14px; /* Adjust font size as needed */
+    line-height: 1.5; /* Adjust line height as needed */
+
+}
+
+i {
+    margin-right: 15px;
+}

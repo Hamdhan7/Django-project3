@@ -1,0 +1,421 @@
+/* ProductList.css */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./KAGE-Freebies-Black.otf') format('opentype');
+}
+
+.container {
+    /* Light mode styles */
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+
+}
+
+.dark-mode .container {
+    /* Dark mode styles */
+    background-color: black;
+    color: white;
+}
+
+
+.card.light-card {
+    background: rgba(255, 255, 255, 0.66);
+    border: none;
+    border-radius: 16px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transition: background-color 0.3s ease;
+}
+
+.card.dark-card {
+    /* Dark mode card styles */
+    /* From https://css.glass */
+    background: rgba(72, 72, 72, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    color: white;
+}
+
+.card.dark-card .card-title,
+.card.dark-card .card-text {
+    /* Dark mode card text styles */
+    color: white;
+}
+
+.heading {
+    /* Heading styles */
+   transition: background-color 0.3s ease;
+
+}
+
+.search-input {
+    /* Search input styles */
+    width: 100%;
+    padding: 7px;
+    border-radius: 18px;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+    background: rgba(255, 255, 255, 0.23);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.product-image {
+    /* Product image styles */
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 18px;
+    transition: filter 0.3s ease;
+    opacity: 0.9; /* Added transparency to blend with the background */
+}
+
+.product-image.rounded {
+    /* Rounded image styles */
+    border-radius: 50%;
+}
+
+.product-title {
+    /* Product title styles */
+    text-align: center;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+
+}
+
+.product-description {
+    /* Product description styles */
+    text-align: center;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.product-price {
+    /* Product price styles */
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    color: #3f9a54;
+    font-weight: bold;
+}
+
+
+.product-quantity {
+    /* Product quantity styles */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.buy-button {
+    /* Buy button styles */
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #00afcc;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    /* Buy button hover styles */
+    background-color: #0099b3;
+}
+
+.dark-mode .search-input {
+    /* Dark mode styles for search input */
+    color: white;
+}
+
+.dark-mode .card.dark-card {
+    /* Dark mode styles for card */
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .card.dark-card .card-title,
+.dark-mode .card.dark-card .card-text {
+    /* Dark mode text styles for card */
+    color: white;
+}
+
+.dark-mode .heading {
+    /* Dark mode styles for heading */
+}
+
+.dark-mode .dark-mode-input .search-input {
+    /* Dark mode styles for search input */
+    color: white;
+    border: none;
+    background: rgba(25, 67, 87, 0.74);
+}
+
+.dark-mode .dark-mode-input .search-input.dark-mode-text {
+    /* Dark mode text styles for search input */
+    color: white;
+}
+
+/* Additional styles for rounded borders on product images */
+
+.card .product-image {
+    overflow: hidden;
+}
+
+.card .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+    transition: filter 0.3s ease, opacity 0.3s ease; /* Added transition for filter and opacity */
+}
+
+.large-image {
+    width: 75%;
+    height: auto;
+    border-radius: 20%;
+    transition: transform 1.2s ease, filter 0.8s ease, opacity 0.8s ease; /* Added transition for filter and opacity */
+}
+
+.dark-mode .large-image {
+    /* Dark mode styles for large image */
+    width: 75%;
+    height: auto;
+    border-radius: 20%;
+    filter: brightness(85%);
+
+}
+
+
+.button-container {
+    display: flex;
+
+}
+
+
+.explore-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25231b;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.dark-mode-explore-button {
+    background-color: #194559;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.explore-button {
+    margin-right: 30px;
+}
+
+.buy-now-button:hover {
+    background-color: rgba(117, 106, 86, 0.45);
+}
+
+.explore-button:hover {
+    background-color: rgba(117, 106, 86, 0.45);
+}
+
+.dark-mode-explore-button:hover {
+    background-color: #0099b3;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: left;
+    margin-top: 70px;
+    margin-bottom: 50px;
+
+}
+
+.section-left {
+    padding-left: 70px;
+
+}
+
+
+.section-left h1 {
+    font-size: 180px;
+    text-align: left;
+    margin-top: 10px;
+    font-family: CustomFont;
+    font-weight: normal;
+
+
+
+}
+.dark-mode-heading{
+    color: #f6ddb5;
+}
+.light-mode-text{
+    color: #0e2832;
+}
+
+.section-left p {
+    margin-top: 40px;
+    font-size: 20px;
+    text-align: left;
+
+}
+
+@media (max-width: 767px) {
+    /* Responsive styles for mobile devices */
+    .container {
+        padding: 10px;
+    }
+
+    .card{
+        display: inline-grid;
+    }
+    .row {
+        flex-direction: column;
+    }
+
+    .col-lg-6 {
+        order: 1;
+    }
+
+    .col-lg-6.order-lg-1 {
+        order: 0;
+    }
+
+    .section-right {
+        text-align: center;
+        margin-top: 50px;
+
+    }
+
+    .large-image {
+        width: 90%;
+    }
+
+    .section-left {
+        text-align: left;
+        padding-left:0px ;
+    }
+
+    .section-paragraph {
+        margin-bottom: 40px;
+    }
+
+
+    .section-left h1 {
+        font-size: 150px;
+        text-align: left;
+
+    }
+
+    .section-left p {
+        margin-top: 0px;
+        font-size: 20px;
+        text-align: left;
+        margin-bottom: 40px;
+
+    }
+
+    .button-container {
+        display: inline;
+        align-items: center;
+
+    }
+
+
+    .explore-button {
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+.middleSection {
+    margin-top: 80px;
+}
+
+@media (min-width: 1800px) {
+
+    .large-image {
+        width: 65%;
+        height: auto;
+        border-radius: 20%;
+        transition: transform 1.2s ease, filter 0.8s ease, opacity 0.8s ease; /* Added transition for filter and opacity */
+    }
+
+    .dark-mode .large-image {
+        /* Dark mode styles for large image */
+        width: 65%;
+        height: auto;
+        border-radius: 20%;
+        filter: brightness(85%);
+
+    }
+ .section-left h1 {
+        font-size: 250px;
+        text-align: left;
+
+    }
+
+    .section-left p {
+        margin-top: 30px;
+        font-size: 30px;
+        text-align: left;
+        margin-bottom: 60px;
+
+    }
+}
+
+@keyframes fontAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.font-animation {
+  animation: fontAnimation 1s infinite;
+}
+
+.middleSect1{
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+
+.middleSect1-light{
+
+    background: #0e2832;
+    color: #f5dcb4;
+}
+
+.middleSect1-dark{
+    background: #f5dcb4;
+    color: #0e2832;
+}
